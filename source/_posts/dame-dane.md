@@ -8,6 +8,7 @@ tags:
 - damedane
 - meme
 - deepfake
+thumbnail: /img/damedane.png
 ---
 
 From an article in [Kapwing Resources](https://www.kapwing.com/resources/baka-mitai-dame-da-ne-meme/),

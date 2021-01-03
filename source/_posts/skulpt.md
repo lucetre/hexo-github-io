@@ -2,9 +2,9 @@
 title: Skulpt to use Python in Markdown
 date: 2020-12-23 11:13:00
 tags:
-- Python
+- python
 - turtle
-- TA
+- ta
 - 2020F
 categories:
 - Tutorial
@@ -59,7 +59,7 @@ function runit(prog) {
     #editor { 
         display: block;
         width: 100%;
-        height: 150px;
+        height: 300px;
     }
 </style>
 <div id="editor">import turtle as t

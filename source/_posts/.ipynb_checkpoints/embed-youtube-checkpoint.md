@@ -2,8 +2,8 @@
 title: Embed YouTube in HTML
 date: 2020-12-23 23:20:07
 tags:
-- YouTube
-- Korean Martial Arts
+- youtube
+- korean_martial_arts
 - 2020S
 categories:
 - Tutorial
