@@ -40,4 +40,3 @@ date: 2020-12-22 22:46:49
 
 ### Table Tennis Trainer in [KASTTC](http://kasttc.kr/)
 * December 2016 - December 2017
----

@@ -9,4 +9,3 @@ date: 2020-12-22 20:43:25
 ---
 ## Daegu Science High School
 * March 2013 - Febuary 2016
----
