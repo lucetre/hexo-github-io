@@ -49,7 +49,7 @@ rect.match {
 </style>
 
 From an article in [Wikipedia](https://en.wikipedia.org/wiki/Nim#The_subtraction_game),
-> In another game which is commonly known as **Nim** (but is better called the subtraction game), an upper bound is imposed on the number of objects that can be removed in a turn. Instead of removing arbitrarily many objects, a player can only remove 1 or 2 or ... or k at a time. The player taking the last object wins.
+> In another game which is commonly known as **Nim** (but is better called the subtraction game), an upper bound is imposed on the number of objects that can be removed in a turn. Instead of removing arbitrarily many objects, a player can only remove 1 or 2 or ... or k at a time. **The player taking the last object wins.**
 
 ### **How to Play**
 In this game, we'll slightly change the rule to get a certain number of stones. Now you can only grab as many stones as the number written inside colored circles. 
