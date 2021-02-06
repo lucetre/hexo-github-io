@@ -17,7 +17,6 @@ Go visit and find some interesting stuffs!
 * [elzino](https://elzino.github.io/)
 * [dawonahn](https://dawonahn.github.io/)
 * [ligi214](https://ligi214.github.io/)
-* [cih23](https://cih23.github.io/)
 * [ohahyoung](https://ohahyoung.github.io/)
 * [suniipang](https://suniipang.github.io/)
 * [lgm0905](https://lgm0905.github.io/)

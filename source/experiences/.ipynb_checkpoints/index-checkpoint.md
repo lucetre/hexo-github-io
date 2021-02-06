@@ -1,10 +1,7 @@
 ---
-title: Experiences
 date: 2020-12-22 22:46:49
 ---
-
----
-## Research Experiences
+## **Research Experiences**
 ### [Data Mining Lab](https://datalab.snu.ac.kr/), Seoul National University
 * November 2019 - Present
 * Undergraduate Research Internship
@@ -14,9 +11,8 @@ date: 2020-12-22 22:46:49
 * July 2017 - Febuary 2018
 * Undergraduate Research Internship
   * Advisor: Prof. [Chang-Gun Lee](https://rubis.snu.ac.kr/~cglee/)
- 
 ---
-## Teaching Experiences
+## **Teaching Experiences**
 ### T.A. - Digital Computer Concept and Practice
 * Fall 2020 Semester at Seoul National University
 
@@ -25,9 +21,8 @@ date: 2020-12-22 22:46:49
 
 ### Tutor - Basic Calculus 1
 * Spring 2020 Semester at Seoul National University
-
 ---
-## Social Experiences
+## **Social Experiences**
 ### Society Member in [Decipher](https://decipher.ac/)
 * Blockchain Research Group at Seoul National University
 * March 2020 - August 2020

@@ -244,7 +244,7 @@ widgets:
                 url: 'https://www.instagram.com/sangjun_son'
             Curriculum Vitae:
                 icon: fas fa-envelope-open-text
-                url: '#'
+                url: 'https://lucetre.github.io/about/'
             Mail:
                 icon: fas fa-reply
                 url: "mailto:lucetre@snu.ac.kr"
@@ -326,7 +326,7 @@ plugins:
         tracking_id: 
     # BuSuanZi site/page view counter
     # https://busuanzi.ibruce.info
-    busuanzi: true
+    busuanzi: false
     # CNZZ statistics
     # https://www.umeng.com/web
     cnzz:
