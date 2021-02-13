@@ -1,6 +1,6 @@
 ---
 title: Music Chords with Mathematics
-date: 2021-02-06 15:30:30
+date: 2021-02-13 15:30:30
 categories:
 - Study
 tags:
@@ -37,7 +37,7 @@ tags:
     text-align: center;
 }
 .f {
-    font-size: 5pt;
+    font-size: 10pt;
     display: inline-block;
     width: 2em;
 }
@@ -62,17 +62,17 @@ span#small{
 <script src="/js/yui-min.js"></script>
  
 <div style="width:100%;overflow:hidden;">
-    <div style="width:40%;float:left;text-align:center">
+    <div style="width:35%;float:left;text-align:center">
         <div class="yui3-skin-sam">
             <div id="demo1"></div>
         </div>
     </div>
-    <div style="width:20%;float:left;text-align:center">
+    <div style="width:30%;float:left;text-align:center">
         <div class="valuefrac" onClick="playCouple()">
             <span class="fraction"><div class="numerator">2</div><div class="denominator">3</div></span>
         </div>
     </div>
-    <div style="width:40%;float:left;text-align:center">
+    <div style="width:35%;float:left;text-align:center">
         <div class="yui3-skin-sam">
             <div id="demo2"></div>
         </div>
@@ -87,13 +87,13 @@ span#small{
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-size:10px;
+.tg th{border-color:black;border-style:solid;border-width:1px;font-size:13px;
   font-weight:bold;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-c3ow{
     border-color:inherit;vertical-align:middle;
 }
 td.tg-c3ow {
-    font-size: 8pt;
+    font-size: 10pt;
     cursor:pointer;
 }
 td.tg-c3ow:hover {
@@ -108,7 +108,7 @@ td.tg-c3ow.playing {
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-c3ow"></th>
+    <th id="freq" class="tg-c3ow">260 Hz</th>
     <th class="tg-c3ow">P1</th>
     <th class="tg-c3ow">m2</th>
     <th class="tg-c3ow">M2</th>
