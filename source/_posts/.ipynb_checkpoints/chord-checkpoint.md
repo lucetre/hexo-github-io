@@ -10,53 +10,51 @@ tags:
 ---
 
 <style>
-.value {
+.valuefrac {
   text-align: center;
   font-weight: bold;
   font-size: 3em;
   height: auto;
+  vertical-align:middle;
   width: 100%;
   line-height: 60px;
-  margin: 20px auto;
+  margin: 40px auto;
   letter-spacing: -.07em;
+  cursor:pointer;
 }
-input[type="range"] {
-  display: block;
-  -webkit-appearance: none;
-  background-color: #bdc3c7;
-  width: 95%;
-  height: 5px;
-  border-radius: 5px;
-  margin: 0 auto;
-  outline: 0;
+.valuefrac:hover {
+    color: #3273dc;
 }
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background-color: #e74c3c;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: 2px solid white;
-  cursor: pointer;
-  transition: .3s ease-in-out;
-}
-input[type="range"]::-webkit-slider-thumb:hover {
-  background-color: white;
-  border: 2px solid #e74c3c;
-}
-input[type="range"]::-webkit-slider-thumb:active {
-  transform: scale(1.6);
-} 
 .fraction {
     display: inline-block;
     width: 2em;
 }
 .numerator {
     text-align: center;
-    border-bottom: 1px solid black; 
+    border-bottom: 2px solid; 
 }
 .denominator {
     text-align: center;
+}
+.f {
+    font-size: 5pt;
+    display: inline-block;
+    width: 2em;
+}
+.n {
+    text-align: center;
+    border-bottom: 1px solid; 
+}
+.d {
+    text-align: center;
+}
+span {
+    height: auto;
+    vertical-align: middle;
+}
+span#small{
+    margin-left: 2px;
+    font-size: 8pt;
 }
 </style>
 
@@ -64,24 +62,116 @@ input[type="range"]::-webkit-slider-thumb:active {
 <script src="/js/yui-min.js"></script>
  
 <div style="width:100%;overflow:hidden;">
-    <div style="width:30%;float:left;text-align:center">
+    <div style="width:40%;float:left;text-align:center">
         <div class="yui3-skin-sam">
-            <div id="demo"></div>
+            <div id="demo1"></div>
         </div>
     </div>
-    <div style="width:70%;float:right;text-align:center">
-        <div class="value">
-            <span class="fraction"><div class="numerator">1</div><div class="denominator">1</div></span>
+    <div style="width:20%;float:left;text-align:center">
+        <div class="valuefrac" onClick="playCouple()">
+            <span class="fraction"><div class="numerator">2</div><div class="denominator">3</div></span>
         </div>
-        <input type="range" min="-1" max="1" step="0.0001" value="0" onChange="playCouple(this)">
+    </div>
+    <div style="width:40%;float:left;text-align:center">
+        <div class="yui3-skin-sam">
+            <div id="demo2"></div>
+        </div>
     </div>
 </div>
 
 <script src="/js/chord.js"></script>
 
-<div>
-    <button id="tone-1" class="button is-secondary" onClick="playSingle(this)">440</button>
-    <button id="tone-2" class="button is-secondary" onClick="playSingle(this)">540</button>
-    <button id="tone-3" class="button is-secondary" onClick="playSingle(this)">640</button>
-    <button id="all" class="button is-primary" onClick="playAll(this)"><i class="fas fa-music"></i></button>
-</div>
+### <b>Musical Temperament</b> (12 tones /  1 octave)
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-size:10px;
+  font-weight:bold;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{
+    border-color:inherit;vertical-align:middle;
+}
+td.tg-c3ow {
+    font-size: 8pt;
+    cursor:pointer;
+}
+td.tg-c3ow:hover {
+    background-color:#f7f7f7;
+}
+td.tg-c3ow.playing {
+    background-color:#efefef;
+    color:#3273dc;
+    font-weight:bold;
+}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-c3ow"></th>
+    <th class="tg-c3ow">P1</th>
+    <th class="tg-c3ow">m2</th>
+    <th class="tg-c3ow">M2</th>
+    <th class="tg-c3ow">m3</th>
+    <th class="tg-c3ow">M3</th>
+    <th class="tg-c3ow">P4</th>
+    <th class="tg-c3ow">TT</th>
+    <th class="tg-c3ow">P5</th>
+    <th class="tg-c3ow">m6</th>
+    <th class="tg-c3ow">M6</th>
+    <th class="tg-c3ow">m7</th>
+    <th class="tg-c3ow">M7</th>
+    <th class="tg-c3ow">P8</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow" onClick="playTemp('p')">Pythagorean <i class="fas fa-headphones-alt"></i></td>
+      <td id='pC' class="tg-c3ow" onClick="playTone('p', 0)"><span class="f"><div class="n">3<sup>0</sup></div><div class="d">2<sup>0</sup></div></span></td>
+      <td id='pCs' class="tg-c3ow" onClick="playTone('p', 1)"><span class="f"><div class="n">2<sup>8</sup></div><div class="d">3<sup>5</sup></div></span></td>
+      <td id='pD' class="tg-c3ow" onClick="playTone('p', 2)"><span class="f"><div class="n">3<sup>2</sup></div><div class="d">2<sup>3</sup></div></span></td>
+      <td id='pDs' class="tg-c3ow" onClick="playTone('p', 3)"><span class="f"><div class="n">2<sup>5</sup></div><div class="d">3<sup>3</sup></div></span></td>
+      <td id='pE' class="tg-c3ow" onClick="playTone('p', 4)"><span class="f"><div class="n">3<sup>4</sup></div><div class="d">2<sup>6</sup></div></span></td>
+      <td id='pF' class="tg-c3ow" onClick="playTone('p', 5)"><span class="f"><div class="n">2<sup>2</sup></div><div class="d">3<sup>1</sup></div></span></td>
+      <td id='pFs' class="tg-c3ow" onClick="playTone('p', 6)"><span class="f"><div class="n">3<sup>6</sup></div><div class="d">2<sup>9</sup></div></span></td>
+      <td id='pG' class="tg-c3ow" onClick="playTone('p', 7)"><span class="f"><div class="n">3<sup>1</sup></div><div class="d">2<sup>1</sup></div></span></td>
+      <td id='pGs' class="tg-c3ow" onClick="playTone('p', 8)"><span class="f"><div class="n">2<sup>7</sup></div><div class="d">3<sup>4</sup></div></span></td>
+      <td id='pA' class="tg-c3ow" onClick="playTone('p', 9)"><span class="f"><div class="n">3<sup>3</sup></div><div class="d">2<sup>4</sup></div></span></td>
+      <td id='pAs' class="tg-c3ow" onClick="playTone('p', 10)"><span class="f"><div class="n">2<sup>4</sup></div><div class="d">3<sup>2</sup></div></span></td>
+      <td id='pB' class="tg-c3ow" onClick="playTone('p', 11)"><span class="f"><div class="n">3<sup>5</sup></div><div class="d">2<sup>7</sup></div></span></td>
+      <td id='pC+' class="tg-c3ow" onClick="playTone('p', 12)"><span class="f"><div class="n">2<sup>1</sup></div><div class="d">3<sup>0</sup></div></span></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" onClick="playTemp('j')">Just Intonation <i class="fas fa-headphones-alt"></i></td>
+      <td id='jC' class="tg-c3ow" onClick="playTone('j',0)"><span class="f"><div class="n">1</div><div class="d">1</div></span></td>
+      <td id='jCs' class="tg-c3ow" onClick="playTone('j',1)"><span class="f"><div class="n">12</div><div class="d">11</div></span></td>
+      <td id='jD' class="tg-c3ow" onClick="playTone('j',2)"><span class="f"><div class="n">9</div><div class="d">8</div></span></td>
+      <td id='jDs' class="tg-c3ow" onClick="playTone('j',3)"><span class="f"><div class="n">6</div><div class="d">5</div></span></td>
+      <td id='jE' class="tg-c3ow" onClick="playTone('j',4)"><span class="f"><div class="n">5</div><div class="d">4</div></span></td>
+      <td id='jF' class="tg-c3ow" onClick="playTone('j',5)"><span class="f"><div class="n">4</div><div class="d">3</div></span></td>
+      <td id='jFs' class="tg-c3ow" onClick="playTone('j',6)"><span class="f"><div class="n">7</div><div class="d">5</div></span></td>
+      <td id='jG' class="tg-c3ow" onClick="playTone('j',7)"><span class="f"><div class="n">3</div><div class="d">2</div></span></td>
+      <td id='jGs' class="tg-c3ow" onClick="playTone('j',8)"><span class="f"><div class="n">8</div><div class="d">5</div></span></td>
+      <td id='jA' class="tg-c3ow" onClick="playTone('j',9)"><span class="f"><div class="n">5</div><div class="d">3</div></span></td>
+      <td id='jAs' class="tg-c3ow" onClick="playTone('j',10)"><span class="f"><div class="n">7</div><div class="d">4</div></span></td>
+      <td id='jB' class="tg-c3ow" onClick="playTone('j',11)"><span class="f"><div class="n">11</div><div class="d">6</div></span></td>
+      <td id='jC+' class="tg-c3ow" onClick="playTone('j',12)"><span class="f"><div class="n">2</div><div class="d">1</div></span></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" onClick="playTemp('e')">Equal Temperament <i class="fas fa-headphones-alt"></i></td>
+      <td id='eC' class="tg-c3ow" onClick="playTone('e',0)">2<sup>0⁄12</sup></td>
+      <td id='eCs' class="tg-c3ow" onClick="playTone('e',1)">2<sup>1⁄12</sup></td>
+      <td id='eD' class="tg-c3ow" onClick="playTone('e',2)">2<sup>2⁄12</sup></td>
+      <td id='eDs' class="tg-c3ow" onClick="playTone('e',3)">2<sup>3⁄12</sup></td>
+      <td id='eE' class="tg-c3ow" onClick="playTone('e',4)">2<sup>4⁄12</sup></td>
+      <td id='eF' class="tg-c3ow" onClick="playTone('e',5)">2<sup>5⁄12</sup></td>
+      <td id='eFs' class="tg-c3ow" onClick="playTone('e',6)">2<sup>6⁄12</sup></td>
+      <td id='eG' class="tg-c3ow" onClick="playTone('e',7)">2<sup>7⁄12</sup></td>
+      <td id='eGs' class="tg-c3ow" onClick="playTone('e',8)">2<sup>8⁄12</sup></td>
+      <td id='eA' class="tg-c3ow" onClick="playTone('e',9)">2<sup>9⁄12</sup></td>
+      <td id='eAs' class="tg-c3ow" onClick="playTone('e',10)">2<sup>10⁄12</sup></td>
+      <td id='eB' class="tg-c3ow" onClick="playTone('e',11)">2<sup>11⁄12</sup></td>
+      <td id='eC+' class="tg-c3ow" onClick="playTone('e',12)">2<sup>12⁄12</sup></td>
+  </tr>
+</tbody>
+</table>
