@@ -49,7 +49,7 @@ function runit(prog) {
 } 
 </script>
 
-***This is an example article to embed Skulpt and Ace code editor to use Python.***
+***This is an example article showing how to embed Skulpt and Ace code editor to use Python.***
     
 * [Skulpt](http://skulpt.org/) is an entirely in-browser implementation of Python.
 * Tutorial w. simple Python turtle code used while doing TA works.

@@ -101,7 +101,7 @@ categories:
 }
 </style>
 
-***This is an example article to embed YouTube videos.***
+***This is an example article showing how to embed YouTube videos.***
 
 Due to COVID-19,
 I've started a YouTube channel and decided to upload practice videos while taking PE courses.

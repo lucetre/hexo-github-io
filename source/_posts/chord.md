@@ -61,6 +61,14 @@ span#small{
 <script src="/js/Tone.js"></script>
 <script src="/js/yui-min.js"></script>
  
+### **Finding Consonance**
+<p style="text-indent:30px">
+How can we distinguish euphony and cacophony? The quality of sound is determined by frequency, one of the main characteristics regarding a singular tone. A chord containing several tones can be harmonious and discordant depending on its frequency set. Tuning and temperament produce the desired pitch regarding a given pitch and modify that tuning to lessen dissonance.
+</p>
+<p style="text-indent:30px">
+There is a simple and easy way to determine whether two tones are compatible. Consonance happens when there is little interference engendered by pulsations of sound waves. And it occurs only when the ratio between the frequencies of the two tones, so-called distance, is numerically simple. A distance between two pitches can be mathematically described as the ratio between the frequency of the first pitch and the second frequency.
+</p>
+
 <div style="width:100%;overflow:hidden;">
     <div style="width:35%;float:left;text-align:center">
         <div class="yui3-skin-sam">
@@ -81,7 +89,24 @@ span#small{
 
 <script src="/js/chord.js"></script>
 
+<p style="text-indent:30px">
+    Let's delve into an example of two pitches, 260 Hz and 390 Hz above. We can calculate the distance as 2:3, the consonant interval named the fifth (from C to G). The same process can reduce various frequency ratios. You can drag and modify each frequency value and check out the simplest integer ratio of two pitches. Clicking the fraction lets you hear a custom-made chord of two pitches.
+</p>
+
 ### <b>Musical Temperament</b> (12 tones /  1 octave)
+
+<p style="text-indent:30px">
+    Temperament is crucial for keyboard instruments, which typically allow players to play only the pitches assigned to the various keys and lack any way to alter a note's pitch in performance. Different musical temperament methods like just intonation, meantone temperament, etc., have been developed. We'll identify how those methods create 12 tones in 1 octave (12-TET) and how melodious they sound.
+</p>
+
+> *From articles in Wikipedia,*
+> * [Pythagorean tuning](https://en.wikipedia.org/wiki/Pythagorean_tuning) is a system of musical tuning in which the frequency ratios of all intervals are based on the ratio 3:2.
+> * [Just intonation or pure intonation](https://en.wikipedia.org/wiki/Just_intonation) is the tuning of musical intervals as whole number ratios (such as 3:2 or 4:3) of frequencies.
+> * [Equal temperament](https://en.wikipedia.org/wiki/Equal_temperament) divides the octave into 12 parts, all of which are equal on a logarithmic scale, with a ratio equal to the 12th root of 2.
+
+<p style="text-indent:30px">
+    Don't hesitate to click on each entry of the table below and check out how it sounds.
+</p>
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -126,7 +151,7 @@ td.tg-c3ow.playing {
 </thead>
 <tbody>
   <tr>
-    <td class="tg-c3ow" onClick="playTemp('p')">Pythagorean <i class="fas fa-headphones-alt"></i></td>
+    <td class="tg-c3ow" onClick="playTemp('p')">Pythagorean Tuning <i class="fas fa-headphones-alt"></i></td>
       <td id='pC' class="tg-c3ow" onClick="playTone('p', 0)"><span class="f"><div class="n">3<sup>0</sup></div><div class="d">2<sup>0</sup></div></span></td>
       <td id='pCs' class="tg-c3ow" onClick="playTone('p', 1)"><span class="f"><div class="n">2<sup>8</sup></div><div class="d">3<sup>5</sup></div></span></td>
       <td id='pD' class="tg-c3ow" onClick="playTone('p', 2)"><span class="f"><div class="n">3<sup>2</sup></div><div class="d">2<sup>3</sup></div></span></td>
