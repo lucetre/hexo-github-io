@@ -4,7 +4,7 @@ date: 2020-12-23 11:13:00
 tags:
 - python
 - turtle
-- ta
+- TA
 - 2020F
 categories:
 - Tutorial
