@@ -99,7 +99,7 @@ There is a simple and easy way to determine whether two tones are compatible. Co
 ### <b>Musical Temperament</b> (12 tones /  1 octave)
 
 <p style="text-indent:30px">
-    Temperament is especially crucial for keyboard instruments, which allow players to play only the pitches assigned to the various keys. Thereby, altering a single note's pitch can spoil the whole performance. Different musical temperament methods like just intonation, meantone temperament have been developed to tune . We'll identify how those methods create 12 tones in 1 octave (12-TET) and how melodious they sound.
+    Temperament is especially crucial for keyboard instruments, which allow players to play only the pitches assigned to the various keys. Thereby, altering a single note's pitch can spoil the whole performance. Different musical temperament methods like just intonation and meantone temperament have been developed to play reasonably well in all of the keys. We'll identify how those methods create 12 tones in 1 octave (12-TET) and whether their melodies are plausible.
 </p>
 
 > *From articles in Wikipedia,*
@@ -110,7 +110,7 @@ There is a simple and easy way to determine whether two tones are compatible. Co
 <p style="text-indent:30px">
     Don't hesitate to click on each entry of the table below and check out how it sounds. 
     Listen to random music composed on each temperament. 
-    Our aural sense can find that the most familiar one is the equal temperament, commonly used in piano tuning.
+    Our aural sense would find that the most familiar is the equal temperament, now commonly used in piano tuning.
 </p>
 
 <style type="text/css">
