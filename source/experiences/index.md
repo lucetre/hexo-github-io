@@ -13,6 +13,10 @@ date: 2020-12-22 22:46:49
   * Advisor: Prof. [Chang-Gun Lee](https://rubis.snu.ac.kr/~cglee/)
 ---
 ## **Teaching Experiences**
+### Tutor - International Students Integrated Peer Tutoring Program
+* Spring 2021 Semester at [SNUGRH](https://dorm.snu.ac.kr/eng)
+* Problem Solving (Data Structures & Algorithm Basic Concepts)
+
 ### T.A. - Digital Computer Concept and Practice
 * Fall 2020 Semester at Seoul National University
 
@@ -30,7 +34,7 @@ date: 2020-12-22 22:46:49
 ### Part-time Waiter in [Paik's Beer](http://paiksbeer.com/)
 * December 2019 - March 2020
 
-### Obligatory Military Service in Republic of Korea Army
+### Obligatory Military Service in [Republic of Korea Army](http://www.army.mil.kr/)
 * Febuary 2018 - October 2019
 
 ### Table Tennis Trainer in [KASTTC](http://kasttc.kr/)
