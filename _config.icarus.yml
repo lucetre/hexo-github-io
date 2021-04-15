@@ -244,7 +244,7 @@ widgets:
                 url: 'https://www.instagram.com/sangjun_son'
             Curriculum Vitae:
                 icon: fas fa-envelope-open-text
-                url: 'https://lucetre.github.io/about/'
+                url: '/tex/CV_SangjunSon.pdf'
             Mail:
                 icon: fas fa-reply
                 url: "mailto:lucetre@snu.ac.kr"

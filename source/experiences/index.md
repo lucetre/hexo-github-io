@@ -28,7 +28,7 @@ date: 2020-12-22 22:46:49
 ---
 ## **Social Experiences**
 ### Society Member in [Decipher](https://decipher.ac/)
-* Blockchain Research Group at Seoul National University
+* Blockchain Research Group in Seoul National University
 * March 2020 - August 2020
 
 ### Part-time Waiter in [Paik's Beer](http://paiksbeer.com/)
