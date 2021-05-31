@@ -1,6 +1,6 @@
 ---
 title: Friends😍
-date: 2020-12-26 14:28:02
+date: 2021-05-31 14:28:02
 tags:
 - forever
 - friend
@@ -20,3 +20,4 @@ Go visit and find some interesting stuffs!
 * [ohahyoung](https://ohahyoung.github.io/)
 * [suniipang](https://suniipang.github.io/)
 * [lgm0905](https://lgm0905.github.io/)
+* [vetobeen](https://vetobeen.tistory.com/)
