@@ -10,7 +10,9 @@ var dir = 0;
 
 var ringsA = 6;
 var ringsB = 4;
-var width = 50;
+var width = 100;
+var inner = width / 10;
+var outer = inner * 2;
 var height = width * sin(pi/3);
 var totalWidth = (ringsA) * width * 0.75;
 var totalHeight = (ringsB + ringsA/2) * height * 1.5;
@@ -23,9 +25,6 @@ var cellStatus = {
 	done: 2,
 }
 
-canvas.onclick = () => {
-	showStatus = !showStatus;
-}
 document.getElementById("autoRestart")
 
 class Cell {
@@ -41,7 +40,7 @@ class Cell {
 				ctx.fillStyle = "royalblue";
 			}
 			ctx.beginPath();
-			ctx.arc(posx, posy, 4, 0, pi*2);
+			ctx.arc(posx, posy, inner, 0, pi*2);
 			ctx.fill();
 		}
 		ctx.beginPath();
@@ -92,7 +91,7 @@ function drawCircle(c, r) {
 	let y = r * height + (c * height * 0.5) + yoff;
 	
 	ctx.beginPath();
-	ctx.arc(x, y, 6, 0, pi*2);
+	ctx.arc(x, y, outer, 0, pi*2);
 	ctx.stroke();
 }
 
@@ -137,8 +136,7 @@ function loop(timestamp) {
 	generateMaze();
 	drawMap();
 	if (cellStack.length != 0) {
-		setTimeout(loop, 50);
-// 		window.requestAnimationFrame(loop);
+		setTimeout(loop, 100);
     }
  	else if (!type) {
         type = !type;
