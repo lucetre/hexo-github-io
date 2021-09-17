@@ -1,9 +1,9 @@
 ---
-date: 2020-12-22 22:46:49
+date: 2021-09-17 12:00:00
 ---
 ## **Research Experiences**
 ### [Data Mining Lab](https://datalab.snu.ac.kr/), Seoul National University
-* November 2019 - Present
+* November 2019 - Febuary 2021
 * Undergraduate Research Internship
   * Advisor: Prof. [U Kang](https://datalab.snu.ac.kr/~ukang/)
   
@@ -11,6 +11,17 @@ date: 2020-12-22 22:46:49
 * July 2017 - Febuary 2018
 * Undergraduate Research Internship
   * Advisor: Prof. [Chang-Gun Lee](https://rubis.snu.ac.kr/~cglee/)
+---
+## **Working Experiences**
+### Google Software Engineering Internship 
+* June 2021 - September 2021
+* Google Korea LLC., Desktop Search Team
+
+### Part-time Waiter in [Paik's Beer](http://paiksbeer.com/)
+* December 2019 - March 2020
+
+### Obligatory Military Service in [Republic of Korea Army](http://www.army.mil.kr/)
+* Febuary 2018 - October 2019
 ---
 ## **Teaching Experiences**
 ### Tutor - International Students Integrated Peer Tutoring Program
@@ -30,12 +41,6 @@ date: 2020-12-22 22:46:49
 ### Society Member in [Decipher](https://decipher.ac/)
 * Blockchain Research Group in Seoul National University
 * March 2020 - August 2020
-
-### Part-time Waiter in [Paik's Beer](http://paiksbeer.com/)
-* December 2019 - March 2020
-
-### Obligatory Military Service in [Republic of Korea Army](http://www.army.mil.kr/)
-* Febuary 2018 - October 2019
 
 ### Table Tennis Trainer in [KASTTC](http://kasttc.kr/)
 * December 2016 - December 2017
