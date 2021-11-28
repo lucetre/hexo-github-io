@@ -14,8 +14,7 @@ thumbnail: /img/youngji.jpg
 
 This is a part of image pre-processing module for [MopReM: Moiré Pattern Removal for Mobile, Texts/Diagrams on Single-colored Background](https://github.com/snucvpip/MopReM). Click the link to visit the project page of <b>SNU-CV-PIP</b> team.
 
-We first select the window to screen-capture and crop the shared screen with range selector. Prerequisite for screen sharing:
-`chrome://flags/#unsafely-treat-insecure-origin-as-secure`
+We first select the window to screen-capture and crop the shared screen with range selector. The module saves the screenshot surrounded with target frame as `target.png`. Re-capture the target photo and save as `source.png`.
 
 <script src="/js/jquery-3.4.1.min.js"></script>
 <script src="/js/html2canvas.min.js"></script>
@@ -161,7 +160,7 @@ We first select the window to screen-capture and crop the shared screen with ran
                   arr[pad_idx*4+3] = 255;
                   pad_idx = (pad*3+j+img.height)*w + (i+pad*3);
                   arr[pad_idx*4+3] = 255;
-                  if (i > img.width/3 && i < img.width*2/3) {
+                  if (i > img.width/4 && i < img.width*3/4) {
                     pad_idx = (pad*2-j)*w + (i+pad*3);
                     arr[pad_idx*4+3] = 255;
                     pad_idx = (pad*4+j+img.height)*w + (i+pad*3);
@@ -176,7 +175,7 @@ We first select the window to screen-capture and crop the shared screen with ran
                   arr[pad_idx*4+3] = 255;
                   pad_idx = (pad*3+i)*w + (pad*3+img.width+j);
                   arr[pad_idx*4+3] = 255;
-                  if (i > img.height/3 && i < img.height*2/3) {
+                  if (i > img.height/4 && i < img.height*3/4) {
                     pad_idx = (pad*3+i)*w + (pad*2-j);
                     arr[pad_idx*4+3] = 255;
                     pad_idx = (pad*3+i)*w + (pad*4+img.width+j);
@@ -249,11 +248,11 @@ imPad = cv2.copyMakeBorder(imPad, pad*2, pad*2, pad*2, pad*2, cv2.BORDER_CONSTAN
         function save(canvas) {
             if (navigator.msSaveBlob) {
                 var blob = canvas.msToBlob();
-                return navigator.msSaveBlob(blob, 'original.png');
+                return navigator.msSaveBlob(blob, 'target.png');
             } else {
                 var el = document.getElementById("moprem_target");
                 el.href = canvas.toDataURL("image/png");
-                el.download = 'original.png';
+                el.download = 'target.png';
                 el.click();
             }
         }

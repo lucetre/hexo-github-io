@@ -1,8 +1,10 @@
 function share_main() {
 	const video = document.getElementById("moprem_video");
 	const start = document.getElementById("moprem_start");
+	const crop = document.getElementById("moprem_capture");
     video.style.display = 'none';
-
+    crop.disabled = true;
+  
 	var displayMediaOptions = {
 		video: {
 			cursor: "always",
@@ -28,6 +30,7 @@ function share_main() {
 
 			video.srcObject = capture;
             video.style.display = 'flex';
+            crop.disabled = false;
 		} catch (error) {
 			console.log(error);
 		}
@@ -39,6 +42,7 @@ function share_main() {
 		tracks.forEach((track) => track.stop());
 		video.srcObject = null;
         video.style.display = 'none';
+        crop.disabled = true;
 	}
 }
 
