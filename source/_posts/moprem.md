@@ -8,8 +8,8 @@ tags:
 - image_processing
 - moire
 - demoire
-cover: /img/youngji.jpg
-thumbnail: /img/youngji.jpg
+cover: /img/snucvpip.jpg
+thumbnail: /img/snucvpip.jpg
 ---
 
 This is a part of image pre-processing module for [MopReM: Moiré Pattern Removal for Mobile, Texts/Diagrams on Single-colored Background](https://github.com/snucvpip/MopReM). Click the link to visit the project page of <b>SNU-CV-PIP</b> team.
