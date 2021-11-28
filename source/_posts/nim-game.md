@@ -58,5 +58,5 @@ In this game, we'll slightly change the rule to get a certain number of stones. 
 3. Win the game against the computer.
 
 <div id="legend"></div>
-<div id="canvas"></div>
-<script src="/js/nim.js"></script>
+<div id="canvas_nim"></div>
+<script src="/js/custom/nim.js"></script>

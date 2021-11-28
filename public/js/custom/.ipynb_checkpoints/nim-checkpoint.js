@@ -149,13 +149,13 @@ class NimView {
                         brushIsActive = false;
                         if (self.currentSelection) {
                             var range = self.currentSelection.x[1] - self.currentSelection.x[0];
-                            var button = d3.select('button').text('Take ' + range);
+                            var button = d3.select('button.nim').text('Take ' + range);
                             if (range === 0 || choice.indexOf(range) === -1)
                                 button.attr('disabled', true);
                             else button.attr('disabled', null);
                         }
                         else {
-                            d3.select('button').text('Take').attr('disabled', true);
+                            d3.select('button.nim').text('Take').attr('disabled', true);
                         }
                       });
       heapBrushes.push(heapBrush);
@@ -233,7 +233,7 @@ class NimController {
           for (var i = 0; i < n; i++)
               if (length >= choice[i] && nim[length - choice[i]] == false)
                   range = choice[i];
-          d3.select('button').text('Take '+range).attr('disabled', true);
+          d3.select('button.nim').text('Take '+range).attr('disabled', true);
           var l = Math.floor(Math.random()*(length-range));
           var x = nimView.x;
           var r = l + range;
@@ -249,12 +249,12 @@ class NimController {
                 nimView.clearSelection();
                 nimView.render();
 
-                d3.select('button').text('Play again').attr('disabled', null)
+                d3.select('button.nim').text('Play again').attr('disabled', null)
                 .on('click', function() {
                   nimModel.reset();
                   nimView.initialize(nimModel);
                   nimView.render();
-                  d3.select('button').text('Take').attr('disabled', true)
+                  d3.select('button.nim').text('Take').attr('disabled', true)
                   .on('click', onClick);
                   status.html(""+ m +" stones left, Your turn!");
                   status.classed("success", false);
@@ -264,7 +264,7 @@ class NimController {
                 status.html(""+ moveStatus.left +" stones left, Your turn!");
                 nimView.clearSelection();
                 nimView.render();
-                d3.select('button').text('Take').attr('disabled', true)
+                d3.select('button.nim').text('Take').attr('disabled', true)
                 .on('click', onClick);
               }
           }, 1500);
@@ -272,7 +272,7 @@ class NimController {
     }
       
     function onClick() {
-      d3.select('button').text('Take').attr('disabled', true);
+      d3.select('button.nim').text('Take').attr('disabled', true);
    	  var moveStatus = nimModel.move(nimView.currentSelection);
       nimView.clearSelection();
       nimView.render();
@@ -309,7 +309,7 @@ class NimController {
       }
     }
     var w= d3.select('svg').node().getBoundingClientRect().width;
-    controls.append("button").classed('button is-primary', true)
+    controls.append("button").classed('button is-primary nim', true)
     .text("Take")
     .attr("width", w)
     .attr('disabled', true)
@@ -319,11 +319,11 @@ class NimController {
 }
 
 var nimModel = new NimModel(1, 22, 28);
-var nimView = new NimView(document.getElementById('canvas'), 700, 30);
+var nimView = new NimView(document.getElementById('canvas_nim'), 700, 30);
 nimView.initialize(nimModel);
 nimView.render();
 var nimController = new NimController(nimModel, nimView, 
-                                      document.getElementById('canvas'), 700, 100);
+                                      document.getElementById('canvas_nim'), 700, 100);
 
 
 // Create data

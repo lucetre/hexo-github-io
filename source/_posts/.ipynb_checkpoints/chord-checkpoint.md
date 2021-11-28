@@ -72,7 +72,7 @@ How can we distinguish euphony and cacophony? The quality of sound is determined
 There is a simple and easy way to determine whether two tones are compatible. Consonance happens when there is little interference engendered by pulsations of sound waves. And it occurs only when the ratio between the frequencies of the two tones, so-called distance, is numerically simple. A distance between two pitches can be mathematically described as the ratio between the frequency of the first pitch and the second frequency.
 </p>
 
-<script src="/js/chord.js"></script>
+<script src="/js/custom/chord.js"></script>
 
 <div style="width:100%;overflow:hidden;">
     <div style="width:35%;float:left;text-align:center">
