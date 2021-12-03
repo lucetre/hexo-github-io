@@ -164,13 +164,17 @@ We first select the window to screen-capture and crop the shared screen with ran
               for (let i = 0; i < img.width; i++) {
                 for (let j = 0; j < pad; j++) {
                   let pad_idx = (pad*3-j)*w + (i+pad*3);
+                  arr[pad_idx*4] = arr[pad_idx*4+1] = arr[pad_idx*4+2] = 0;
                   arr[pad_idx*4+3] = 255;
                   pad_idx = (pad*3+j+img.height)*w + (i+pad*3);
+                  arr[pad_idx*4] = arr[pad_idx*4+1] = arr[pad_idx*4+2] = 0;
                   arr[pad_idx*4+3] = 255;
                   if (i > img.width/4 && i < img.width*3/4) {
                     pad_idx = (pad*2-j)*w + (i+pad*3);
+                    arr[pad_idx*4] = arr[pad_idx*4+1] = arr[pad_idx*4+2] = 0;
                     arr[pad_idx*4+3] = 255;
                     pad_idx = (pad*4+j+img.height)*w + (i+pad*3);
+                    arr[pad_idx*4] = arr[pad_idx*4+1] = arr[pad_idx*4+2] = 0;
                     arr[pad_idx*4+3] = 255;
                   }
                 }
@@ -179,13 +183,17 @@ We first select the window to screen-capture and crop the shared screen with ran
               for (let i = 0; i < img.height; i++) {
                 for (let j = 0; j < pad; j++) {
                   let pad_idx = (pad*3+i)*w + (pad*3-j);
+                  arr[pad_idx*4] = arr[pad_idx*4+1] = arr[pad_idx*4+2] = 0;
                   arr[pad_idx*4+3] = 255;
                   pad_idx = (pad*3+i)*w + (pad*3+img.width+j);
+                  arr[pad_idx*4] = arr[pad_idx*4+1] = arr[pad_idx*4+2] = 0;
                   arr[pad_idx*4+3] = 255;
                   if (i > img.height/4 && i < img.height*3/4) {
                     pad_idx = (pad*3+i)*w + (pad*2-j);
+                    arr[pad_idx*4] = arr[pad_idx*4+1] = arr[pad_idx*4+2] = 0;
                     arr[pad_idx*4+3] = 255;
                     pad_idx = (pad*3+i)*w + (pad*4+img.width+j);
+                    arr[pad_idx*4] = arr[pad_idx*4+1] = arr[pad_idx*4+2] = 0;
                     arr[pad_idx*4+3] = 255;
                   }
                 }
@@ -194,12 +202,16 @@ We first select the window to screen-capture and crop the shared screen with ran
               for (let i = 0; i < pad; i++) {
                 for (let j = 0; j < pad; j++) {
                   let pad_idx = (pad*3-i)*w + (pad*3-j);
+                  arr[pad_idx*4] = arr[pad_idx*4+1] = arr[pad_idx*4+2] = 0;
                   arr[pad_idx*4+3] = 255;
                   pad_idx = (pad*3-i)*w + (pad*3+img.width+j);
+                  arr[pad_idx*4] = arr[pad_idx*4+1] = arr[pad_idx*4+2] = 0;
                   arr[pad_idx*4+3] = 255;
                   pad_idx = (pad*3+img.height+i)*w + (pad*3-j);
+                  arr[pad_idx*4] = arr[pad_idx*4+1] = arr[pad_idx*4+2] = 0;
                   arr[pad_idx*4+3] = 255;
                   pad_idx = (pad*3+img.height+i)*w + (pad*3+img.width+j);
+                  arr[pad_idx*4] = arr[pad_idx*4+1] = arr[pad_idx*4+2] = 0;
                   arr[pad_idx*4+3] = 255;
                 }
               }
