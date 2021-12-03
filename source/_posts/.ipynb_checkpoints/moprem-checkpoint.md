@@ -1,5 +1,5 @@
 ---
-title: Screen Capturing Module for MopReM
+title: Desktop Screen Capturing Module for MopReM
 date: 2021-11-27 22:09:10
 categories:
 - Research
@@ -14,7 +14,7 @@ thumbnail: /img/snucvpip.jpg
 
 This is a part of image pre-processing module for [MopReM: Moiré Pattern Removal for Mobile, Texts/Diagrams on Single-colored Background](https://github.com/snucvpip/MopReM). Click the link to visit the project page of <b>SNU-CV-PIP</b> team.
 
-We first select the window to screen-capture and crop the shared screen with range selector. The module saves the screenshot surrounded with target frame as `target.png`. Re-capture the target photo and save as `source.png`.
+We first select the window to screen-capture and crop the shared screen with range selector. The module saves the screenshot surrounded with target frame as `target.png`. Re-capture the target photo and save as `source.png`. THIS IS DESKTOP ONLY!
 
 <script src="/js/jquery-3.4.1.min.js"></script>
 <script src="/js/html2canvas.min.js"></script>
@@ -144,6 +144,13 @@ We first select the window to screen-capture and crop the shared screen with ran
   
               let arr = new Uint8ClampedArray(w*h*4);
   
+              for (let i = 0; i < w; i++) {
+                for (let j = 0; j < h; j++) {
+                  for (let k = 0; k < 4; k++) {
+                    arr[(j*w+i)*4+k] = 255;
+                  }
+                }
+              }
               for (let i = 0; i < img.width; i++) {
                 for (let j = 0; j < img.height; j++) {
                   let pad_idx = (j+pad*3)*w + (i+pad*3);
