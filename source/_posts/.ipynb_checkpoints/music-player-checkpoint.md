@@ -9,4 +9,4 @@ categories:
 
 Music Player (demo)
 
-<iframe width="100%" height="800px" src="/html/music-player.html"></iframe>
+<iframe width="100%" height="796.7px" src="/html/music-player.html"></iframe>

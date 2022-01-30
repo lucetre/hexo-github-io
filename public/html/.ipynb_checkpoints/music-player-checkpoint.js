@@ -3,25 +3,25 @@ $(document).ready(function() {
 
   var Playlist = [
     {
-      Artist: "The Chainsmokers ft. Halsey",
-      Song: "Closer",
+      Artist: "Ed Sheeran",
+      Song: "Photograph",
       Album: "Collage",
       Src:
-        "https://ncs-files-1.nyc3.digitaloceanspaces.com/mp3s/Unison-Aperture.mp3"
+        "music/Ed Sheeran-Photograph.mp3"
     },
     {
       Artist: "Ed Sheeran",
       Song: "Shape Of You",
       Album: "Divide",
       Src:
-        "https://ncs-files-1.nyc3.digitaloceanspaces.com/mp3s/Waysons%20-%20Eternal%20Minds.mp3"
+        "music/Ed Sheeran-Shape of You.mp3"
     },
     {
-      Artist: "Backstreet Boys",
-      Song: "Unmistakable",
+      Artist: "Ed Sheeran",
+      Song: "Sing",
       Album: "Unbreakable",
       Src:
-        "https://ncs-files-1.nyc3.digitaloceanspaces.com/mp3s/High%20Maintenance%20-%20Change%20Your%20Ways%20%28feat.%20Charlotte%20Haining%29.mp3"
+        "music/Ed Sheeran-Sing.mp3"
     }
   ];
 
