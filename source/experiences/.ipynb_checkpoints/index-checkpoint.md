@@ -1,6 +1,20 @@
 ---
 date: 2021-09-17 12:00:00
 ---
+## **Working Experiences**
+### [NFT Bank](https://nftbank.ai/), Engineer Intern
+* Decemeber 2021 - Febuary 2022
+
+### [Google](https://www.google.com/), Software Engineering Internship 
+* June 2021 - September 2021
+* Google Korea LLC., Desktop Search Team
+
+### [Paik's Beer](http://paiksbeer.com/), Part-time Waiter
+* December 2019 - March 2020
+
+### [Republic of Korea Army](http://www.army.mil.kr/), Obligatory Military Service
+* Febuary 2018 - October 2019
+---
 ## **Research Experiences**
 ### [Data Mining Lab](https://datalab.snu.ac.kr/), Seoul National University
 * November 2019 - Febuary 2021
@@ -11,17 +25,6 @@ date: 2021-09-17 12:00:00
 * July 2017 - Febuary 2018
 * Undergraduate Research Internship
   * Advisor: Prof. [Chang-Gun Lee](https://rubis.snu.ac.kr/~cglee/)
----
-## **Working Experiences**
-### Google Software Engineering Internship 
-* June 2021 - September 2021
-* Google Korea LLC., Desktop Search Team
-
-### Part-time Waiter in [Paik's Beer](http://paiksbeer.com/)
-* December 2019 - March 2020
-
-### Obligatory Military Service in [Republic of Korea Army](http://www.army.mil.kr/)
-* Febuary 2018 - October 2019
 ---
 ## **Teaching Experiences**
 ### Tutor - International Students Integrated Peer Tutoring Program

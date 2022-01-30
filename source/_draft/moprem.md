@@ -14,7 +14,7 @@ thumbnail: /img/snucvpip.jpg
 
 This is a part of image pre-processing module for [MopReM: Moiré Pattern Removal for Mobile, Texts/Diagrams on Single-colored Background](https://github.com/snucvpip/MopReM). Click the link to visit the project page of <b>SNU-CV-PIP</b> team.
 
-We first select the window to screen-capture and crop the shared screen with range selector. The module saves the screenshot surrounded with target frame as `target.png`. Re-capture the target photo and save as `source.png`. THIS IS DESKTOP ONLY!
+We first select the window to screen-capture and crop the shared screen with range selector. The module saves the screenshot surrounded with target frame as `target.png`. Re-capture the target photo and save as `source.png`. Only executable on desktop!
 
 <script src="/js/jquery-3.4.1.min.js"></script>
 <script src="/js/html2canvas.min.js"></script>
