@@ -1,17 +1,21 @@
-let Playlist = [{
-    Src: "music/1.mp3",
-  },{
-    Src: "music/2.mp3",
-  },{
-    Src: "music/3.mp3",
-  },{
-    Src: "music/4.mp3",
-  }
+let Playlist = [
+  { Src: "music/1.mp3" },
+  { Src: "music/2.mp3" },
+  { Src: "music/3.mp3" },
+  { Src: "music/4.mp3" },
+  { Src: "music/5.mp3" },
+  { Src: "music/6.mp3" },
+  { Src: "music/7.mp3" },
+  { Src: "music/8.mp3" },
+  { Src: "music/9.mp3" },
+  { Src: "music/8.mp3" },
+  { Src: "music/9.mp3" },
 ];
 
 function fetchMusic(n, filename) {
-  const file = `http://49.142.7.113:4000/html/${filename}`;
-//   const file = `https://lucetre.github.io/html/${filename}`;
+//   const file = `http://49.142.7.113:4000/html/${filename}`;
+  const file = `https://lucetre.github.io/html/${filename}`;
+//   const file = `https://github.com/lucetre/blog-lucetre/raw/dev/${filename}`;
   const jsmediatags = window.jsmediatags;
   jsmediatags.read(file, {
     onSuccess: function(tag) { 
@@ -41,7 +45,6 @@ function fetchMusic(n, filename) {
       Playlist[n-1]['Artist'] = artist;
       Playlist[n-1]['Album'] = album;
       Playlist[n-1]['Genre'] = genre;
-      
     },
     onError: function(error) {
       throw new Error(error);
@@ -185,6 +188,7 @@ $(document).ready(function() {
     audio.load();
     audio.play();
     $("#songName").html(Playlist[i]["Song"]);
+    $("#artistName").html(Playlist[i]["Artist"]);
     var btn = $("#play-pause");
     $(btn).html("<i style='color:#007bff' class='fa fa-pause'></i>");
     $(".range-indicator").removeClass("range-indicator-pause");
