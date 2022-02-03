@@ -3,6 +3,12 @@ body {
   font-family: "Ubuntu";
 }
 
+.carousel-item {
+  width: 298px;
+  height: 298px;
+  background-size: 298px;
+}
+
 input[type="range"] {
   position: absolute;
   width: 100%;
@@ -66,10 +72,9 @@ input[type="range"]:focus {
 
 #tracktime {
   text-align: center;
-  padding: 10px;
+  padding-top: 20px;
   width: 100%;
-  font-family: "Ubuntu";
-  font-weight: 300;
+  font-size: 13px;
 }
 
 .controls {
@@ -118,13 +123,22 @@ input[type="range"]:focus {
   color: #f44336;
 }
 
-#songName {
-  height: 54px;
-  padding: 10px;
+#song {
+  height: 80px;
+  line-height: 140%;
+  padding: 50px;
   padding-top: 15px;
-  font-size: 27px;
-  font-family: "Ubuntu";
   transition: all 0.5s;
+}
+
+#songName {
+  letter-spacing: -1px;
+  font-size: 22px;
+}
+
+#artistName {
+  padding-top: 5px;
+  font-size: 15px;
 }
 
 .range-indicator-pause {
@@ -173,7 +187,9 @@ input[type="range"]:focus {
   background-color: transparent;
   transition: background-color 0.5s;
   color: white;
-  border-color: white transparent;
+  padding: 1px;
+  font-size: small;
+  border-color: transparent;
 }
 
 .list-group-item.active {

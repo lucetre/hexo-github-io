@@ -1,34 +1,67 @@
+let Playlist = [{
+    Src: "music/1.mp3",
+  },{
+    Src: "music/2.mp3",
+  },{
+    Src: "music/3.mp3",
+  },{
+    Src: "music/4.mp3",
+  }
+];
+
+function fetchMusic(n, filename) {
+  const file = `https://lucetre.github.io/html/${filename}`;
+  const jsmediatags = window.jsmediatags;
+  jsmediatags.read(file, {
+    onSuccess: function(tag) { 
+
+      // Array buffer to base64
+      const data = tag.tags.picture.data;
+      const format = tag.tags.picture.format;
+      let base64String = "";
+      for (let i = 0; i < data.length; i++) {
+        base64String += String.fromCharCode(data[i]);
+      }
+      const cover = `url(data:${format};base64,${window.btoa(base64String)})`;
+      const title = tag.tags.title;
+      const artist = tag.tags.artist;
+      const album = tag.tags.album;
+      const genre = tag.tags.genre;
+      document.querySelector(`#music-${n}`).style.backgroundImage = cover;
+      $(`#btn-${n-1}`).html(`${title} - ${artist}`);
+      
+      if (n == 1) {
+        $("#songName").html(title);
+        $("#artistName").html(artist);
+        $(".list-group-item:nth-child(" + 2 + ")").addClass("active");
+      }
+      Playlist[n-1]['Cover'] = cover;
+      Playlist[n-1]['Song'] = title;
+      Playlist[n-1]['Artist'] = artist;
+      Playlist[n-1]['Album'] = album;
+      Playlist[n-1]['Genre'] = genre;
+      
+    },
+    onError: function(error) {
+      throw new Error(error);
+    }
+  });
+}
+
 $(document).ready(function() {
   var i = 0;
 
-  var Playlist = [
-    {
-      Artist: "Ed Sheeran",
-      Song: "Photograph",
-      Album: "Collage",
-      Src:
-        "music/Ed Sheeran-Photograph.mp3"
-    },
-    {
-      Artist: "Ed Sheeran",
-      Song: "Shape Of You",
-      Album: "Divide",
-      Src:
-        "music/Ed Sheeran-Shape of You.mp3"
-    },
-    {
-      Artist: "Ed Sheeran",
-      Song: "Sing",
-      Album: "Unbreakable",
-      Src:
-        "music/Ed Sheeran-Sing.mp3"
+  for (let j = 0; j < Playlist.length; j++) { 
+    if (j == 0) {
+      $('.carousel-inner').append(`<div id='music-${j+1}' class="carousel-item active"></div>`);
     }
-  ];
-
-  $("#songName").html(Playlist[i]["Song"]);
+    else {
+      $('.carousel-inner').append(`<div id='music-${j+1}' class="carousel-item"></div>`); 
+    }
+    $('.list-group').append(`<button id="btn-${j}" value=${j} class="list-group-item"></button>`);
+    fetchMusic(j+1, Playlist[j]['Src']);
+  }
   $("source").attr("src", Playlist[i]["Src"]);
-  $(".artist-name").html(Playlist[i]["Artist"]);
-  $(".list-group-item:nth-child(" + i + 2 + ")").addClass("active");
 
   $(".carousel").carousel({
     interval: false
@@ -45,7 +78,7 @@ $(document).ready(function() {
       this.value = 0;
       $(this).html("<i style='color:#007bff' class='fa fa-pause'></i>");
       $(".range-indicator").toggleClass("range-indicator-pause");
-      $(".active").attr("style", "");
+      $(".list-group-item.active").attr("style", "");
     } else {
       $("audio")
         .get(0)
@@ -53,25 +86,26 @@ $(document).ready(function() {
       this.value = 1;
       $(this).html("<i class='fa fa-play'></i>");
       $(".range-indicator").addClass("range-indicator-pause");
-      $(".active").attr("style", "background-color:#F44336a1");
+      $(".list-group-item.active").attr("style", "background-color:#F44336a1");
     }
   });
 
   $("#next").on("click", function() {
     i++;
     if (i == Playlist.length) i = 0;
-    $(".carousel").carousel("next");
+    $(".carousel").carousel(i);
     $("source").attr("src", Playlist[i]["Src"]);
     audio.load();
     audio.play();
     $("#songName").html(Playlist[i]["Song"]);
+    $("#artistName").html(Playlist[i]["Artist"]);
     var btn = $("#play-pause");
     $(btn).html("<i style='color:#007bff' class='fa fa-pause'></i>");
     $(".range-indicator").removeClass("range-indicator-pause");
     $(".artist-name").html(Playlist[i]["Artist"]);
     var x = String(parseInt(i) + 2);
     var y = String(parseInt(x) - 1);
-    str = "nth-child(" + y + ")";
+    let str = `nth-child(${y})`;
     if (x == 2) str = "last-child()";
     $(".list-group-item:nth-child(" + x + ")").addClass("active");
     $(".list-group-item:" + str).removeClass("active");
@@ -83,18 +117,19 @@ $(document).ready(function() {
     if (i == -1) {
       i = Playlist.length - 1;
     }
-    $(".carousel").carousel("prev");
+    $(".carousel").carousel(i);
     $("source").attr("src", Playlist[i]["Src"]);
     audio.load();
     audio.play();
     $("#songName").html(Playlist[i]["Song"]);
+    $("#artistName").html(Playlist[i]["Artist"]);
     var btn = $("#play-pause");
     $(btn).html("<i style='color:#007bff' class='fa fa-pause'></i>");
     $(".range-indicator").removeClass("range-indicator-pause");
     $(".artist-name").html(Playlist[i]["Artist"]);
     var x = String(parseInt(i) + 2);
     var y = String(parseInt(x) + 1);
-    str = "nth-child(" + y + ")";
+    let str = `nth-child(${y})`;
     if (x == Playlist.length + 1) str = "nth-child(2)";
     $(".list-group-item:nth-child(" + x + ")").addClass("active");
     $(".list-group-item:" + str).removeClass("active");
