@@ -175,8 +175,23 @@ input[type="range"]:focus {
   height: 0px;
   background: transparent;
   z-index: 1;
-  overflow: hidden;
+  overflow: auto;
   transition: all 0.5s;
+}
+
+
+.playlist::-webkit-scrollbar{
+    width: 6px;
+}
+
+.playlist::-webkit-scrollbar-thumb{
+    height: 17%;
+    background-color: rgba(33,133,133,1);
+    border-radius: 10px;  
+}
+
+.playlist::-webkit-scrollbar-track{
+    background-color: rgba(33,133,133,0.33);
 }
 
 .list-group-item:hover {

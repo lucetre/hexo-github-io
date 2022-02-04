@@ -8,13 +8,20 @@ let Playlist = [
   { Src: "music/7.mp3" },
   { Src: "music/8.mp3" },
   { Src: "music/9.mp3" },
+  { Src: "music/1.mp3" },
+  { Src: "music/2.mp3" },
+  { Src: "music/3.mp3" },
+  { Src: "music/4.mp3" },
+  { Src: "music/5.mp3" },
+  { Src: "music/6.mp3" },
+  { Src: "music/7.mp3" },
   { Src: "music/8.mp3" },
   { Src: "music/9.mp3" },
 ];
 
 function fetchMusic(n, filename) {
-//   const file = `http://49.142.7.113:4000/html/${filename}`;
-  const file = `https://lucetre.github.io/html/${filename}`;
+  const file = `http://49.142.7.113:4000/html/${filename}`;
+//   const file = `https://lucetre.github.io/html/${filename}`;
 //   const file = `https://github.com/lucetre/blog-lucetre/raw/dev/${filename}`;
   const jsmediatags = window.jsmediatags;
   jsmediatags.read(file, {
@@ -38,7 +45,7 @@ function fetchMusic(n, filename) {
       if (n == 1) {
         $("#songName").html(title);
         $("#artistName").html(artist);
-        $(".list-group-item:nth-child(" + 2 + ")").addClass("active");
+        $(".list-group-item:nth-child(1)").addClass("active");
       }
       Playlist[n-1]['Cover'] = cover;
       Playlist[n-1]['Song'] = title;
@@ -107,7 +114,7 @@ $(document).ready(function() {
     $(btn).html("<i style='color:#007bff' class='fa fa-pause'></i>");
     $(".range-indicator").removeClass("range-indicator-pause");
     $(".artist-name").html(Playlist[i]["Artist"]);
-    var x = String(parseInt(i) + 2);
+    var x = String(parseInt(i) + 1);
     var y = String(parseInt(x) - 1);
     let str = `nth-child(${y})`;
     if (x == 2) str = "last-child()";
@@ -131,7 +138,7 @@ $(document).ready(function() {
     $(btn).html("<i style='color:#007bff' class='fa fa-pause'></i>");
     $(".range-indicator").removeClass("range-indicator-pause");
     $(".artist-name").html(Playlist[i]["Artist"]);
-    var x = String(parseInt(i) + 2);
+    var x = String(parseInt(i) + 1);
     var y = String(parseInt(x) + 1);
     let str = `nth-child(${y})`;
     if (x == Playlist.length + 1) str = "nth-child(2)";
@@ -177,11 +184,11 @@ $(document).ready(function() {
   });
 
   $(".list-group-item").on("click", function() {
-    var x = String(parseInt(i) + 2);
+    var x = String(parseInt(i) + 1);
     $(".list-group-item:nth-child(" + x + ")").removeClass("active");
     $(".list-group-item:nth-child(" + x + ")").attr("style", "");
     i = this.value;
-    var x1 = String(parseInt(i) + 2);
+    var x1 = String(parseInt(i) + 1);
     $(".list-group-item:nth-child(" + x1 + ")").addClass("active");
     $(".carousel").carousel(parseInt(i));
     $("source").attr("src", Playlist[i]["Src"]);
