@@ -20,8 +20,8 @@ let Playlist = [
 
 function fetchMusic(n, file) {
   const jsmediatags = window.jsmediatags;
-  jsmediatags.read(`http://49.142.7.113:4000/html/${file}`, {
-//   jsmediatags.read(`https://lucetre.github.io/html/${file}`, {
+//   jsmediatags.read(`http://49.142.7.113:4000/html/${file}`, {
+  jsmediatags.read(`https://lucetre.github.io/html/${file}`, {
     onSuccess: function(tag) { 
 
       // Array buffer to base64
