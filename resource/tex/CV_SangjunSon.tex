@@ -1,0 +1,201 @@
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{resume} % Use the custom resume.cls style
+
+\usepackage[letterpaper,left=0.75in,top=1in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+%\usepackage[letterpaper,left=0.75in,top=0.7in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\usepackage{hyperref}
+\usepackage{fixltx2e}
+\usepackage[misc]{ifsym}
+\usepackage{fontawesome}
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Sangjun Son} % Your name
+
+\address{1, Gwanak-ro, Gwanak-gu, Seoul, Republic of Korea, 08826}
+\address{\Letter{} lucetre@snu.ac.kr \space \space \faPhone{} +82 10 3831 0094
+\space \space \faGithub{} \href{https://lucetre.github.io/about}{lucetre.github.io}} 
+\address{\large\texttt{lucetre}}
+
+\begin{document}
+\setlist[itemize,1]{leftmargin=\dimexpr 26pt-2mm}
+\setlist[itemize,2]{leftmargin=\dimexpr 26pt-5mm}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{RESEARCH INTERESTS}
+My research focuses on \textbf{Machine learning}, \textbf{Data mining}, \textbf{Computer vision}, and \textbf{Tensor analysis}. \\
+I am also interested in \textbf{Blockchain} and \textbf{Business planning}.
+
+\end{rSection}
+%
+\begin{rSection}{EDUCATION}
+{\bf Seoul National University}, \textit{Seoul, Republic of Korea} \hfill Mar. 2016 - Present \\
+Candidate for B.S. in Computer Science and Engineering \\
+Interdisciplinary Major in Entrepreneurship
+
+{\bf Daegu Science High School}, \textit{Daegu, Republic of Korea} \hfill Mar. 2013 - Feb. 2016
+\end{rSection}
+
+%--------------------------------------------------------------------------------
+%    WORKING EXPERIENCES
+%--------------------------------------------------------------------------------
+\begin{rSection}{WORKING EXPERIENCES}
+{\bf Google Software Engineering Intern}, \textit{Google Korea LLC., Desktop Search Team} \hfill Jun. 2021 - Sep. 2021 \\ 
+Automatic I2F and Nesting config generation for hOSRP to diOSRP conversion \\
+Designed an internal tool for efficient development in OSRP migration
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PREPRINTS   SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{PUBLICATIONS}
+Dawon Ahn, \textbf{Sangjun Son}, and U Kang, \\
+	``\href{https://dl.acm.org/doi/abs/10.1145/3340531.3417413}
+	{\textbf{Gtensor: Fast and Accurate Tensor Analysis System using GPUs}}," \\
+	\textit{29th ACM International Conference on 
+	Information and Knowledge Management (CIKM) 2020}, Virtual Event, Ireland
+	
+\textbf{Sangjun Son}*, Yongchan Park*, Minyong Cho, and U Kang, \\ 
+	``\href{https://datalab.snu.ac.kr/dao-cp/}
+	{\textbf{DAO-CP: Data-adaptive online CP decomposition}}," 
+    \textit{make publicly available}, (* Both authors contributed equally to this work)
+\end{rSection}
+
+%--------------------------------------------------------------------------------
+%    RESEARCH EXPERIENCES
+%--------------------------------------------------------------------------------
+\begin{rSection}{RESEARCH EXPERIENCES}
+\href{https://datalab.snu.ac.kr/}{\textbf{Data Mining Laboratory}}, \textit{Seoul National University} \hfill Nov. 2019 - Feb. 2021 \\
+Research Internship (Advisor: Prof. U Kang)
+\vspace{-1mm}
+\begin{itemize}
+  \item[$\circ$] \textbf{Gtensor}, \textbf{BIGtensor}: Accelerated large-scale tensor analysis on heterogenous system \vspace{-1mm}
+  \item[$\circ$] \textbf{DAO-CP}: Enhanced accuracy for CP decomposition of time-evolving tensors by a data-adaptive algorithm
+\end{itemize}
+\href{https://rubis.snu.ac.kr/}{\textbf{Real-Time Ubiquitous Systems Laboratory}}, \textit{Seoul National University} \hfill Jul. 2017 - Feb. 2018 \\
+Research Internship (Advisor: Prof. Chang-Gun Lee)
+\vspace{-1mm}
+\begin{itemize}
+  \item[$\circ$] Implemented simulation to study effects of AED delivery using unmaned vehicle transport technology on defibrillation in out-of-hospital cardiac arrest
+\end{itemize}
+\end{rSection}
+
+%--------------------------------------------------------------------------------
+%    TEACHING EXPERIENCES
+%--------------------------------------------------------------------------------
+\begin{rSection}{TEACHING EXPERIENCES} 
+{\bf International Students Integrated Peer Tutoring Program}, \textit{Undergraduate Student Tutor} \hfill Spring. 2021 \\
+Data Structures \& Algorithm Fundamentals, \href{https://dorm.snu.ac.kr/}{SNU Gwanak Residence Halls}
+
+{\bf Digital Computer Concept and Practice}, \textit{Lab Class Lecturer} \hfill Fall. 2020 \\
+Introduction to Python and Its Application, \href{https://cse.snu.ac.kr/}{Dept. of Computer Science and Engineering}
+
+{\bf Basic Computing: First Adventures in Computing}, \textit{Teaching Assistant} \hfill Fall. 2020 \\
+Python Basics, \href{https://liberaledu.snu.ac.kr/}{SNU Faculty of Liberal Education}
+
+{\bf Basic Calculus 1}, \textit{Undergraduate Student Tutor} \hfill Spring. 2020 \\
+\href{http://www.math.snu.ac.kr/}{TA Office of the Department of Mathematical Sciences}
+\end{rSection}
+
+%--------------------------------------------------------------------------------
+%    SOFTWARE
+%--------------------------------------------------------------------------------
+\begin{rSection}{SOFTWARE}
+\href{https://datalab.snu.ac.kr/bigtensor/}{\bf BIGtensor},
+\textit{Contributor of BIGtensor-GPU and Hadoop} \hfill Nov. 2019 - Feb. 2021 \\ 
+Tensor mining packages for large-scale tensor analysis
+
+\href{https://github.com/rubis-lab/DroneTransferSimulator/}{\bf Drone Transfer Simulator}  \hfill Jul. 2017 - Feb. 2018 \\
+Simulation of AED drone delivery to defibrillation for patients with out-of-hospital cardiac arrest
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	COURSE PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{COURSE PROJECTS}
+{\bf \href{https://github.com/snucvpip/MopReM}{MopReM: Moiré Pattern Removal for Mobile}}, \textit{Texts/Diagrams on Single-colored Background} \hfill Fall. 2021\\
+Established a efficient module for mobile cameras specialized in demoireing re-captured screen materials.
+
+{\bf Deep Learning-based Wrinkle Detection}, \href{https://morpheus3d.co.kr/}{\textit{Morpheus3D}} \hfill Fall. 2020\\
+Built new models to segment wrinkle parts in 3D scanned face images by exploiting state-of-the-art methods 
+
+{\bf ABC}, \textit{Art with Block-Chain: Media-art Platform} \hfill Spring. 2020\\
+Designed a platform where any creator can upload their own media arts and increase profits \\
+Implemented smart contract on ERC-721 token, which records its metadata and p5.js-based content on blockchain
+
+{\bf BusyWrite}, \textit{Team Writing Solution to Accelerate Collaboration} \hfill Fall. 2017\\
+Implemented a concept of a unit of thought that users write on, called \textit{Bubble}, 
+and enabled users to write simultaneously and merge after resolving conflicts
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{SKILLS}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{5ex}} l }
+Programming Languages \ & C++, Python, Java, MATLAB, Scala, Solidity, R (Welcome to any languages) \\
+%
+Frameworks & PyTorch, Tensorflow, React, AngularJS, Django \\ 
+		   & OpenCL, OpenGL, Hadoop, MFC
+\end{tabular}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	HONORS and AWARDS   SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{HONORS and AWARDS}
+
+{\bf ACM ICPC Regional Contest Seoul}, \textit{ACM ICPC Gogle Team}, 15th place \hfill Nov. 2021
+
+{\bf Merit-based Scholarship (full amount)}, \textit{Seoul National University} \hfill Fall. 2020 - Spring. 2021
+
+{\bf SNU Development Fund Scholarship}, \textit{Seoul National University} \hfill Spring. 2017 - Fall. 2017
+
+{\bf Korea Olympiad in Informatics}, \textit{National Programming Contest for High School Students} \hfill May. 2015\\
+Silver medal, 3rd place
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXTRACURRICULAR ACTIVITIES SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{EXTRA-CURRICULAR ACTIVITIES}
+%
+
+{\bf WD Partners}, \textit{Consulting Firm providing Indoor Ventilation Solution} \hfill Jun. 2021 - Dec. 2021\\
+Demonstrate optimal condition for high ventilation efficiency through CFD analysis for pollutants \\
+(e.g., fine dust and droplets containing viruses) \\
+Built a prototype device using Coanda effect for real-world validation 
+
+{\bf Problem Solving in SNU}, \textit{Study Group for Coding Interview} \hfill Jun. 2021 - Sep. 2021 \\
+Managed weekly practices and workshops to share and learn skills and strategies
+
+{\bf \href{https://decipher.ac/}{Decipher}}, \textit{Blockchain Research Group in Seoul National University} \hfill Mar. 2020 - Aug. 2020\\
+Attended weekly seminars about various blockchain topics as a member of StuDeFi \\
+Designed a donation platform, AID-U for contributing student education expenses 
+
+{\bf \href{http://paiksbeer.com/}{Paik’s Beer}} \hfill Dec. 2019 - Mar. 2020\\
+Served beer and snacks as a part-time job after school \
+
+{\bf \href{https://www.army.mil.kr/}{Republic of Korea Army}}, \textit{Obligatory Military Service} \hfill Feb. 2018 - Oct. 2019 \\
+Discharged on full-term military service \\
+Occupational specialty: administration, communication equipment operation, chaplaincy 
+
+{\bf \href{http://kasttc.kr/}{KASTTC}}, \textit{KwanAkSa Table Tennis Club} \hfill Dec. 2016 - Dec. 2017\\
+Managed competitions and weekly training as a club's supervisor
+
+\end{rSection}
+
+\end{document}
