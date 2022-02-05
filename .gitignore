@@ -4,4 +4,6 @@ Thumbs.db
 node_modules/
 .deploy_git/
 lucetre-github-io.json
-.ipynb_checkpoints/
+*.ipynb_checkpoints*
+db.json
+package-lock.json

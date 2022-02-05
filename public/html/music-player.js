@@ -20,7 +20,7 @@ let Playlist = [
 ];
 
 function fetchMusic(n, filename) {
-  const file = `http://49.142.7.113:4000/html/${filename}`;
+  const file = `http://localhost:4000/html/${filename}`;
 //   const file = `https://lucetre.github.io/html/${filename}`;
 //   const file = `https://github.com/lucetre/blog-lucetre/raw/dev/${filename}`;
   const jsmediatags = window.jsmediatags;
