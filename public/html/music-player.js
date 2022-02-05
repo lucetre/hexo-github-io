@@ -1,3 +1,4 @@
+
 let Playlist = [
   { Src: "music/1.mp3" },
   { Src: "music/2.mp3" },
@@ -8,23 +9,19 @@ let Playlist = [
   { Src: "music/7.mp3" },
   { Src: "music/8.mp3" },
   { Src: "music/9.mp3" },
-  { Src: "music/1.mp3" },
-  { Src: "music/2.mp3" },
-  { Src: "music/3.mp3" },
-  { Src: "music/4.mp3" },
-  { Src: "music/5.mp3" },
-  { Src: "music/6.mp3" },
-  { Src: "music/7.mp3" },
-  { Src: "music/8.mp3" },
-  { Src: "music/9.mp3" },
+  { Src: "music/10.mp3" },
+  { Src: "music/11.mp3" },
+  { Src: "music/12.mp3" },
+  { Src: "music/13.mp3" },
+  { Src: "music/14.mp3" },
+  { Src: "music/15.mp3" },
+  { Src: "music/16.mp3" },
 ];
 
-function fetchMusic(n, filename) {
-  const file = `http://localhost:4000/html/${filename}`;
-//   const file = `https://lucetre.github.io/html/${filename}`;
-//   const file = `https://github.com/lucetre/blog-lucetre/raw/dev/${filename}`;
+function fetchMusic(n, file) {
   const jsmediatags = window.jsmediatags;
-  jsmediatags.read(file, {
+  jsmediatags.read(`http://49.142.7.113:4000/html/${file}`, {
+//   jsmediatags.read(`https://lucetre.github.io/html/${file}`, {
     onSuccess: function(tag) { 
 
       // Array buffer to base64
@@ -117,7 +114,7 @@ $(document).ready(function() {
     var x = String(parseInt(i) + 1);
     var y = String(parseInt(x) - 1);
     let str = `nth-child(${y})`;
-    if (x == 2) str = "last-child()";
+    if (x == 1) str = "last-child()";
     $(".list-group-item:nth-child(" + x + ")").addClass("active");
     $(".list-group-item:" + str).removeClass("active");
     $(".list-group-item:" + str).attr("style", "");
@@ -141,7 +138,7 @@ $(document).ready(function() {
     var x = String(parseInt(i) + 1);
     var y = String(parseInt(x) + 1);
     let str = `nth-child(${y})`;
-    if (x == Playlist.length + 1) str = "nth-child(2)";
+    if (x == Playlist.length + 1) str = "nth-child(1)";
     $(".list-group-item:nth-child(" + x + ")").addClass("active");
     $(".list-group-item:" + str).removeClass("active");
     $(".list-group-item:" + str).attr("style", "");
