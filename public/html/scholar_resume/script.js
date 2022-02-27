@@ -15,7 +15,7 @@ function updateView(view) {
 function updateIframe() {
   iframe.src = "https://www.resume.games/";
 
-  scholar_resume_phone.style.width = "350px";
+  scholar_resume_phone.style.width = "300px";
   scholar_resume_phone.style.height = "600px";
 
   /*Idea by /u/aerosole*/
