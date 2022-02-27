@@ -14,6 +14,7 @@ thumbnail: /img/friends.jpg
 These are my friends' websites, which motivated me to create my own GitHub page.
 Go visit and find some interesting stuffs!
 
+* [janghyeok](https://janghyeok.vercel.app/)
 * [lgm0905](https://lgm0905.github.io/resume/)
 * [elzino](https://elzino.github.io/)
 * [dawonahn](https://dawonahn.github.io/)
