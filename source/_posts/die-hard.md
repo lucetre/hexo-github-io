@@ -310,10 +310,10 @@ function changeJug(jugNum, delta) {
       </div>
     </div>
   </div>
-
-<canvas id="die-hard"></canvas>
-<script src="/js/custom/die-hard.js"></script>
   
 <p style="text-indent:30px">
 Every step can be visualized as billiard moves in the coordinate system on a triangular lattice. The above hexagonal plot gives two solutions to the 5-gallon and 3-gallon puzzle. Each point on the boundary denotes combinations achievable with the jugs. Starting at two vertices (5, 0) and (0, 3), traces of the blue points show pourable transitions. We have measured 4 gallons in 6 and 7 steps concerning the starting points. Might it be possible to get a prime gallon of water from coprime gallon jugs (e.g., to yield 7 gallons from a 9-gallon jug and 15-gallon jug)?
 </p>
+
+<canvas id="die-hard"></canvas>
+<script src="/js/custom/die-hard.js"></script>
