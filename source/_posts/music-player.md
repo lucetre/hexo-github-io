@@ -10,4 +10,4 @@ categories:
 - Social
 ---
 
-<iframe width="100%" height="818px" src="https://music-player.lucetre.vercel.app/"></iframe>
+<iframe width="100%" height="824px" src="https://music-player.lucetre.vercel.app/"></iframe>
