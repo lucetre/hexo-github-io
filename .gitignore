@@ -7,3 +7,5 @@ lucetre-github-io.json
 *.ipynb_checkpoints*
 db.json
 package-lock.json
+github-deploy-key.pub
+github-deploy-key
