@@ -112,4 +112,4 @@ deploy:
   type: git
   repo: https://github.com/lucetre/lucetre.github.io
   branch: master
-  token: $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
+  token: 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
