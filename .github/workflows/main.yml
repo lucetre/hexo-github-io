@@ -31,13 +31,7 @@ jobs:
           node-version: '14'
 
       - name: Install Dependencies and Hexo
-        env:
-          ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_PRI }}
         run: |
-          mkdir -p ~/.ssh/
-          echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.email "lucetre@naver.com"
           git config --global user.name "lucetre"
           npm install

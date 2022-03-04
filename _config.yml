@@ -108,5 +108,5 @@ theme: icarus
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:lucetre/blog-lucetre.git #https://github.com/lucetre/lucetre.github.io # 
+  repo: https://github.com/lucetre/lucetre.github.io
   branch: master
