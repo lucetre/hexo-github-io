@@ -27,7 +27,7 @@ jobs:
 
       - name: Install Dependencies and Hexo
         run: |
-          git config --global user.email "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          git config --global user.email "lucetre@naver.com"
           git config --global user.name "${{ github.actor }}"
           sed -i "s/__GITHUB_TOKEN__/${{ secrets.github_token }}/" _config.yml
           npm install
