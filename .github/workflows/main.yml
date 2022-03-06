@@ -34,10 +34,12 @@ jobs:
         run: |
           git config --global user.email "${USER_EMAIL}"
           git config --global user.name "${USER_NAME}"
+          sed -i "s/__GITHUB_TOKEN__/${GITHUB_TOKEN}/" _config.yml
           npm install
           npm install -g hexo-cli
 
       # Deploy hexo blog-lucetre
       - name: Deploy Hexo Application
         run: |
+          hexo clean
           hexo deploy --generate
