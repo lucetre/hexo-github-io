@@ -24,16 +24,12 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - name: Hello World!
-        run: |
-          echo  "${{ github.actor }}"
-          echo  "${{ github.token }}"
           
       - name: Install Dependencies and Hexo
         run: |
-          git config --global user.email "lucetre@naver.com"
+          git config --global user.email "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
           git config --global user.name "github.actor"
-          sed -i "s/__GITHUB_TOKEN__/${{ secrets.HEXO_DEPLOY_PRI }}/" _config.yml
+          sed -i "s/__GITHUB_TOKEN__/${{ secrets.DEPLOY_TOKEN }}/" _config.yml
           npm install
           npm install -g hexo-cli
 
