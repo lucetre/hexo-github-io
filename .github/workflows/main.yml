@@ -33,7 +33,6 @@ jobs:
           npm install
           npm install -g hexo-cli
 
-      - name: Deploy Hexo Application
+      - name: Deploy Hexo Application wo/ clean
         run: |
-          hexo clean
           hexo deploy --generate
