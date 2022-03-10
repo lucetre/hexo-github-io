@@ -9,35 +9,30 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+permissions: read-all
+
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      # Node.js version 14
+      
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-
+          
       - name: Install Dependencies and Hexo
         run: |
-          git config --global user.email "lucetre@naver.com"
-          git config --global user.name "lucetre"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          sed -i "s/__GITHUB_TOKEN__/${{ secrets.DEPLOY_TOKEN }}/" _config.yml
           npm install
           npm install -g hexo-cli
 
-      # Deploy hexo blog-lucetre
-      - name: Deploy Hexo Application
+      - name: Deploy Hexo Application wo/ clean
         run: |
           hexo deploy --generate
