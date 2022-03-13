@@ -10,7 +10,6 @@ tags:
 - resume
 - nftbank
 cover: /img/axie-infinity.jpg
-thumbnail: /img/axie-infinity.jpg
 ---
 
 **[Axie Infinity](https://axieinfinity.com/)** is a blockchain-based **P2E** game. Players purchase NFTs of cute monsters called Axies and then pit them against each other in battles. They can earn SLP tokens during gameplay and trade them for money at an exchange.
