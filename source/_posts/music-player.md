@@ -13,6 +13,6 @@ categories:
 cover: /img/musicetre.png
 ---
 
-Visit the page for the full-screen version; [`https://music-player.lucetre.vercel.app/`](https://music-player.lucetre.vercel.app/).
+Visit the page for the full-screen version; [`https://musicetre.vercel.app/`](https://musicetre.vercel.app/).
 
-<iframe width="100%" height="840px" src="https://music-player.lucetre.vercel.app/"></iframe>
+<iframe width="100%" height="840px" src="https://musicetre.vercel.app/"></iframe>
