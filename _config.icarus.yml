@@ -240,7 +240,7 @@ widgets:
         url: "https://www.linkedin.com/in/sangjun-son-6b7556202/"
       Curriculum Vitae:
         icon: fas fa-envelope-open-text
-        url: "/tex/CV_SangjunSon.pdf"
+        url: "/CV_SangjunSon.pdf"
 
   # Table of contents widget configurations
   - # Where should the widget be placed, left sidebar or right sidebar
