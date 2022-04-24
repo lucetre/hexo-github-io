@@ -2,19 +2,20 @@
 title: Dame Dane
 date: 2021-01-01 01:09:30
 categories:
-- Study
+  - Study
 tags:
-- video
-- damedane
-- meme
-- deepfake
+  - video
+  - damedane
+  - meme
+  - deepfake
 thumbnail: /img/damedane.png
 ---
 
 From an article in [Kapwing Resources](https://www.kapwing.com/resources/baka-mitai-dame-da-ne-meme/),
+
 > **Deepfakes** are finding their way into meme culture more than ever before and one clip is leading the charge. The "Dame Dane" meme features a Japanese song from the popular video game series Yakuza.
 
-I will apply **First Order Modeling** method, which allows creating deep fakes in a few minutes. You can also create your own Dame Dane video using [Google Colab](https://colab.research.google.com/drive/1KaUkXA9aTeRBuAQcLXe7RYXgTF6VvRM6?usp=sharing).
+I will apply **First Order Modeling** method, which allows creating deep fakes in a few minutes.
 
 <div style="display:flex;justify-content:space-between">
     <video width="48%" controls>
@@ -26,6 +27,7 @@ I will apply **First Order Modeling** method, which allows creating deep fakes i
 </div>
 
 ### **First Order Motion Model for Image Animation** in NeurIPS 2019
+
 For further information, please refer to the video below and visit the [website](https://aliaksandrsiarohin.github.io/first-order-model-website/) of the paper.
 
 <style>

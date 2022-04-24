@@ -2,12 +2,12 @@
 title: Desktop Screen Capturing Module for MopReM
 date: 2021-11-27 22:09:10
 categories:
-- Research
+  - Research
 tags:
-- computer_vision
-- image_processing
-- moire
-- demoire
+  - computer_vision
+  - image_processing
+  - moire
+  - demoire
 cover: /img/snucvpip.jpg
 thumbnail: /img/snucvpip.jpg
 ---
@@ -22,7 +22,6 @@ We first select the window to screen-capture and crop the shared screen with ran
 <script src="/js/es6-promise.auto.min.js"></script>
 <script src="/js/custom/moprem.js" defer></script>
 
-
 <p align="center">
     <button id="moprem_start" class="button is-secondary is-rounded" style="width:49%">Screen Share</button>
     <button id="moprem_capture" class="button is-secondary is-rounded" style="width:49%">Image Crop</button>
@@ -31,6 +30,7 @@ We first select the window to screen-capture and crop the shared screen with ran
 <div id="moprem_output" style="display:flex"></div>
 
 <a id="moprem_target" style="display:none"></a>
+
 <style>
     #screenshot_mask {
         width: 100%;
