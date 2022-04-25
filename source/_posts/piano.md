@@ -90,13 +90,14 @@ tags:
   }
   .chrome {
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    height: 50vh;
-    margin: 50px;
+    height: 400px;
+    margin: 10px 0px;
     border-radius: 0.25rem;
     overflow: hidden;
+    background-color: #1a2734;
   }
   .chrome iframe {
-    display:block;
+    display: block;
     width: 100%;
     height: 100%;
     border: 0;
