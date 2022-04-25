@@ -6,7 +6,7 @@ date: 2022-04-14 14:00:00
 
 I am an undergraduate student majoring in **Computer Science and Engineering**, and minoring in **Entrepreneurship**, an interdisciplinary major at Seoul National University.
 
-- [Curriculum Vitae](/CV_SangjunSon.pdf)
+- [Curriculum Vitae](/cv_sangjun.pdf)
 
 ---
 
