@@ -146,7 +146,7 @@ tags:
   }
   iframe.browser {
     position: relative;
-    top: -127px;
+    top: -33%;
     left: 0;
     width: 167%;
     height: 167%;
