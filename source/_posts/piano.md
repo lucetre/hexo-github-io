@@ -1,21 +1,15 @@
 ---
-title: Piano API for ThereMINI
+title: Piano API
 date: 2022-04-24 15:49:10
 categories:
   - Study
 tags:
+  - 2022S
   - socket.io
   - music
-  - backend
-  - arduino
+  - nestjs
+  - herokuapp
 ---
-
-<div style="position: relative; width: 100%; height: 0; padding-top: 56.25%; overflow: hidden; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;" src="https:&#x2F;&#x2F;www.miricanvas.com&#x2F;v&#x2F;1117alt?embed">
-  </iframe>
-</div>
-
-[Presentation Link](https://www.miricanvas.com/v/1117alt)
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
 <iframe src="https://theremini.herokuapp.com/" class="browser"></iframe>
