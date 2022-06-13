@@ -6,7 +6,7 @@ tags:
 - korean_martial_arts
 - 2020S
 categories:
-- Tutorial
+- Social
 ---
 
 <style>

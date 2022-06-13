@@ -7,7 +7,7 @@ tags:
 - TA
 - 2020F
 categories:
-- Tutorial
+- Study
 ---
 
 <script src="/js/skulpt.min.js" type="text/javascript"></script> 
