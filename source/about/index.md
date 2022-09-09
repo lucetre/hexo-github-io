@@ -2,9 +2,9 @@
 date: 2022-04-14 14:00:00
 ---
 
-## **Introduction**
+## Introduction
 
-I graduated with B.S. degrees in **Computer Science and Engineering** and **Entrepreneurship** as an interdisciplinary major at Seoul National University. I am interested in both Business development and Engineering.
+I graduated with B.S. degrees in **Computer Science and Engineering**, and **Entrepreneurship** as an interdisciplinary major at Seoul National University. I am interested in both **Business development** and **Engineering**.
 
 - [Curriculum Vitae](/cv_sangjun.pdf)
 
