@@ -4,7 +4,7 @@ date: 2022-04-14 14:00:00
 
 ## **Introduction**
 
-I am an undergraduate student majoring in **Computer Science and Engineering**, and minoring in **Entrepreneurship**, an interdisciplinary major at Seoul National University.
+I graduated with B.S. degrees in **Computer Science and Engineering** and **Entrepreneurship** as an interdisciplinary major at Seoul National University. I am interested in both Business development and Engineering.
 
 - [Curriculum Vitae](/cv_sangjun.pdf)
 
@@ -12,12 +12,16 @@ I am an undergraduate student majoring in **Computer Science and Engineering**, 
 
 ## Contacts
 
-- Email: [lucetre at snu.ac.kr](mailto:lucetre@snu.ac.kr)
+- Email: [lucetre97 at gmail.com](mailto:lucetre97@gmail.com)
 
 ---
 
-## Research Interests
+## Work & Research Interests
 
+- Site Reliability Engineering
+- Blockchain
+- Web Development
+- Business Development
 - Machine Learning
 - Data Mining
 - Tensor Analysis

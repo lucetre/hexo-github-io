@@ -258,6 +258,7 @@ widgets:
     type: links
     # Names and URLs of the sites
     links:
+      Moloco: "https://moloco.com/"
       NFT Bank: "https://nftbank.ai/"
       Google Korea: "https://careers.google.com/locations/seoul/"
       Data Mining Lab: "https://datalab.snu.ac.kr/"
