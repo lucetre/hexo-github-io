@@ -12,7 +12,7 @@ tags:
 ---
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
-<iframe src="https://theremini.herokuapp.com/" class="browser"></iframe>
+<iframe src="https://theremini.up.railway.app/" class="browser"></iframe>
 
 <script src="https://gist.github.com/lucetre/21bcb17e3783fa2fca3e93e2ff392027.js"></script>
 
