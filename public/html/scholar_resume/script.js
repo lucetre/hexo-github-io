@@ -2,9 +2,9 @@
 var scholar_resume_phone = document.getElementById("scholar_resume_phone_1"),
   iframe = document.getElementById("scholar_resume_frame_1");
 
-var view_flag = false;
+var srview_flag = false;
 
-function updateView(view) {
+function srview_updateView(view) {
   if (view) {
     scholar_resume_phone.className = "scholar_resume_phone view_1";
   } else {
@@ -12,7 +12,7 @@ function updateView(view) {
   }
 }
 
-function updateIframe() {
+function srview_updateIframe() {
   iframe.src = "https://www.resume.games/";
 
   scholar_resume_phone.style.width = "300px";
@@ -20,9 +20,9 @@ function updateIframe() {
 
   document.getElementById("scholar_resume_wrapper").style.perspective = ("1000px");
 }
-updateIframe();
+srview_updateIframe();
 
 document.getElementById("scholar_resume_wrapper").addEventListener("click", function() {
-  updateView(view_flag);
-  view_flag = !view_flag;
+  srview_updateView(srview_flag);
+  srview_flag = !srview_flag;
 });
