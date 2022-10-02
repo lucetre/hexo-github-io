@@ -18,11 +18,13 @@ function webview_updateIframe() {
   webview_phone.style.width = "400px";
   webview_phone.style.height = "550px";
 
-  document.getElementById("webview_wrapper").style.perspective = ("1000px");
+  document.getElementById("webview_wrapper").style.perspective = "1000px";
 }
 webview_updateIframe();
 
-document.getElementById("webview_wrapper").addEventListener("click", function() {
-  webview_updateView(webview_flag);
-  webview_flag = !webview_flag;
-});
+document
+  .getElementById("webview_wrapper")
+  .addEventListener("click", function () {
+    webview_updateView(webview_flag);
+    webview_flag = !webview_flag;
+  });
