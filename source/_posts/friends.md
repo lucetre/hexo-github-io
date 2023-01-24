@@ -16,7 +16,6 @@ Go visit and find some interesting stuffs!
 
 * [goldenhazard](https://goldenhazard.github.io)
 * [lego0901](https://lego0901.tistory.com/)
-* [youngji-ryou](https://youngji-ryou.github.io/resume/)
 * [janghyeok](https://janghyeok.vercel.app/)
 * [lgm0905](https://lgm0905.github.io/resume/)
 * [dawonahn](https://dawonahn.github.io/)
