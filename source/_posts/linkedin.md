@@ -1,6 +1,6 @@
 ---
 title: LinkedIn Profile
-date: 2023-04-30 08:33:21
+date: 2023-04-31 08:33:21
 tags:
   - myself
   - profile
