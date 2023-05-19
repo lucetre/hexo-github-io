@@ -1,6 +1,6 @@
 ---
 title: Friends😍
-date: 2022-09-09 17:21:02
+date: 2023-05-19 14:21:12
 tags:
 - forever
 - friend
@@ -14,6 +14,7 @@ thumbnail: /img/friends.jpg
 These are my friends' websites, which motivated me to create my own GitHub page.
 Go visit and find some interesting stuffs!
 
+* [vroomfan](https://vroomfan.netlify.app/)
 * [goldenhazard](https://goldenhazard.github.io)
 * [lego0901](https://lego0901.tistory.com/)
 * [janghyeok](https://janghyeok.vercel.app/)
