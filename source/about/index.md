@@ -1,12 +1,15 @@
 ---
-date: 2022-04-14 14:00:00
+date: 2023-07-23 00:00:00
 ---
 
 ## Introduction
 
 > _"Baby, keep on developing like you ain't got a choice."_
 
-I graduated with B.S. degrees in **Computer Science and Engineering**, and **Entrepreneurship** as an interdisciplinary major at Seoul National University. I am interested in both **Business development** and **Engineering**.
+Site Reliability Engineer at Moloco with a background in B.S. degrees in Computer Science and Entrepreneurship
+as an interdisciplinary major from Seoul National University. Adept in engineering (Backend & DevOps) and
+business development, with a keen interest in exploring emerging technologies and actively engaging in discussions
+with others.
 
 - [Curriculum Vitae](/cv_sangjun.pdf)
 
