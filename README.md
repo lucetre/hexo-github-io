@@ -1,4 +1,4 @@
-### lucetre's Blog
+# lucetre's Blog
 Visit [https://lucetre.github.io/](https://lucetre.github.io/)
 
 ### Usage
