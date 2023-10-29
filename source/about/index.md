@@ -14,7 +14,7 @@ Site Reliability Engineer at Moloco with a background in B.S. degrees in Compute
 
 ## Contacts
 
-- Email: [lucetre97 at gmail.com](mailto:lucetre97@gmail.com)
+- Email: [sangjun.son at moloco.com](mailto:sangjun.son@moloco.com)
 
 ---
 
