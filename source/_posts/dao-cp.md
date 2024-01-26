@@ -1,6 +1,6 @@
 ---
 title: DAO-CP - Data-Adaptive Online CP decomposition for tensor stream
-date: 2022-06-13 18:00:11
+date: 2021-06-13 18:00:11
 categories:
   - Research
 tags:
