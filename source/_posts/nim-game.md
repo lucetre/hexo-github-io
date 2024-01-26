@@ -1,6 +1,6 @@
 ---
 title: Nim Game against Computer
-date: 2022-01-10 20:13:40
+date: 2023-01-10 20:13:40
 tags:
 - game
 - nim

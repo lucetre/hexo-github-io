@@ -1,6 +1,6 @@
 ---
 title: Music Chords with Mathematics
-date: 2021-02-13 15:30:30
+date: 2023-02-13 15:30:30
 categories:
 - Study
 tags:

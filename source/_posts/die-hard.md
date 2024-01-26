@@ -1,6 +1,6 @@
 ---
 title: The Water Jug Riddle
-date: 2021-11-07 15:20:24
+date: 2022-11-07 15:20:24
 categories:
 - Study
 tags:
