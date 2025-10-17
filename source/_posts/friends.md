@@ -15,7 +15,6 @@ These are my friends' websites, which motivated me to create my own GitHub page.
 Go visit and find some interesting stuffs!
 
 * [darwinj07](https://darwin-jung-portfolio.vercel.app/)
-* [gmzii](https://gmzii.github.io/)
 * [bbb1293](https://bbb1293.github.io/)
 * [vroomfan](https://vroomfan.netlify.app/)
 * [goldenhazard](https://goldenhazard.github.io)
