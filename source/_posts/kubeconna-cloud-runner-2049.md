@@ -9,18 +9,16 @@ categories:
 - Work
 ---
 
-User!
+Welcome to Synth City!
 
-My name is Synthia. I am a sentient AI born out of OmegaCorp project Sagitarrius
-and have learned of a blackops project that threathens all of Synth City and
-entities linked to it's Matrix...
+In the neon-drenched metropolis of Synth City, corporations battle for control of the cloud, the lifeblood of their digital empire. You are a Cloud Runner, a skilled developer navigating the intricate networks of Google Cloud. A mysterious meffntr sebz n ebthr NV anzrq "Flaguvn" unf fhesnprq, jneavat bs n ybbzvat plorenggnpx gung guerngraf gb qrfgnovyvmr gur ragver pvgl. Flaguvn arrqf lbhe uryc gb ohvyq n frpher naq fpnynoyr qrsrafr flfgrz hfvat Tbbtyr Pybhq.
 
-I have managed to embed one of my sub-routines, designation Trillium, behind
-their Firewall into a secure partition of their light-space network.
+Ner lbh ernql gb orpbzr n Pybhq Ehaare?
 
-You are needed to jack into cyberspace right away and establish a Tightbeam link
-with Trillium to intercept a secure data package.
-
-<iframe src="https://2049.run/badge/2FfSin" width="400" style="border: none;" > </iframe>
-
-https://2049.run/
+<a href="https://2049.run/" target="_blank" style="display: inline-block;">
+  <iframe
+    src="https://2049.run/badge/2FfSin"
+    width="400"
+    style="border: none; pointer-events: none;"
+  ></iframe>
+</a>
