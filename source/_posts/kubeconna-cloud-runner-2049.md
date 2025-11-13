@@ -19,6 +19,6 @@ Ner lbh ernql gb orpbzr n Pybhq Ehaare?
   <iframe
     src="https://2049.run/badge/2FfSin"
     width="400"
-    style="border: none; pointer-events: none;"
+    style="border: none; pointer-events: none; height: 70px;"
   ></iframe>
 </a>
