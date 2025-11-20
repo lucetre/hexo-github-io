@@ -6,7 +6,7 @@ date: 2023-07-23 00:00:00
 
 > _"Baby, keep on developing like you ain't got a choice."_
 
-Site Reliability Engineer at Moloco with a background in B.S. degrees in Computer Science and Entrepreneurship as an interdisciplinary major from Seoul National University. Adept in engineering (Backend & DevOps) and business development, with a keen interest in exploring emerging technologies and actively engaging in discussions with others.
+Software Engineer at Moloco. Interested in engineering (Backend & DevOps) and business development, with a keen interest in exploring emerging technologies and actively participating in discussions with others.
 
 - [Curriculum Vitae](/cv_sangjun.pdf)
 
