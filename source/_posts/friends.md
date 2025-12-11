@@ -2,7 +2,6 @@
 title: Friends😍
 date: 2025-10-16 23:24:09
 tags:
-- forever
 - friend
 - profile
 categories:
@@ -14,6 +13,7 @@ thumbnail: /img/friends.jpg
 These are my friends' websites, which motivated me to create my own GitHub page.
 Go visit and find some interesting stuffs!
 
+* [mayshin10](https://mayshin10.github.io/)
 * [darwinj07](https://darwin-jung-portfolio.vercel.app/)
 * [bbb1293](https://bbb1293.github.io/)
 * [vroomfan](https://vroomfan.netlify.app/)
