@@ -12,6 +12,7 @@
     "version": "5.4.2"
   },
   "dependencies": {
+    "babel-plugin-inferno": "6.8.5",
     "bulma-stylus": "^0.8.0",
     "hexo": "^5.0.0",
     "hexo-component-inferno": "^0.10.5",
